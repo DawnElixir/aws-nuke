@@ -80,8 +80,8 @@ func DescribeS3Buckets(svc *s3.S3) ([]s3.Bucket, error) {
 			continue
 		}
 
-		location := UnPtrString(bucketLocationResponse.LocationConstraint, endpoints.UsEast1RegionID)
-		region := UnPtrString(svc.Config.Region, endpoints.UsEast1RegionID)
+		location := UnPtrString(bucketLocationResponse.LocationConstraint, endpoints.CnNorth1RegionID)
+		region := UnPtrString(svc.Config.Region, endpoints.CnNorth1RegionID)
 		if location == region && out != nil {
 			buckets = append(buckets, *out)
 		}
