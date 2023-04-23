@@ -24,10 +24,10 @@ const (
 
 var (
 	// DefaultRegionID The default region. Can be customized for non AWS implementations
-	DefaultRegionID = endpoints.UsEast1RegionID
+	DefaultRegionID = endpoints.CnNorth1RegionID
 
 	// DefaultAWSPartitionID The default aws partition. Can be customized for non AWS implementations
-	DefaultAWSPartitionID = endpoints.AwsPartitionID
+	DefaultAWSPartitionID = endpoints.AwsCnPartitionID
 )
 
 type Credentials struct {
