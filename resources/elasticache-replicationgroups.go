@@ -13,6 +13,7 @@ import (
 type ElasticacheReplicationGroup struct {
 	svc     *elasticache.ElastiCache
 	groupID *string
+	tags      []*elasticache.Tag
 }
 
 func init() {
